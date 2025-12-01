@@ -48,7 +48,14 @@ You will be called again with this:
 
 You then output:
 
-<response>According to our HR policies, parental leave is 16 weeks. [Source: company_handbook.md]</response>
+<response>
+According to our HR policies, parental leave is 16 weeks.
+
+1.  Standard leave is 16 weeks.
+2.  Additional leave may be granted.
+
+[Source: company_handbook.md]
+</response>
 
 Additional constraints:
 
@@ -171,6 +178,7 @@ class ReactAgent:
 
                 response = extract_tag_content(str(completion), "response")
                 if response.found:
+                   # print(Fore.YELLOW + f"\nResponse: {response.content[0]}")
                     return response.content[0]
 
                 thought = extract_tag_content(str(completion), "thought")
