@@ -1,21 +1,22 @@
 [tool.poetry]
 name = "agentic-patterns"
 version = "1.0.0"
-description = ""
+description = "A library of agentic patterns for AI applications."
 authors = ["MichaelisTrofficus <miguel.otero.pedrido.1993@gmail.com>"]
 license = "MIT"
 readme = "README.md"
+packages = [{include = "agentic_patterns", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
 groq = "^0.10.0"
-jupyter = "^1.0.0"
 python-dotenv = "^1.0.1"
 colorama = "^0.4.6"
 types-colorama = "^0.4.15.20240311"
 graphviz = "^0.20.3"
 
 [tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
 pre-commit = "^3.8.0"
 black = "^24.8.0"
 reorder-python-imports = "^3.13.0"

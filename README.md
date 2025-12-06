@@ -155,22 +155,26 @@ Take a look at the YouTube video! 👇
 
 ## Installation
 
-If you take a look at any of the notebooks in the [notebooks/](notebooks) folder you'll see some helper methods and classes being imported from this library: `agentic-patterns`.
+You can install this package directly from the repository:
 
-This is the library implemented in the [src/](src) folder, and contains a full implementation of the 4 patterns and related helper methods.
+```bash
+pip install git+https://github.com/yourusername/agentic-patterns-course.git
+```
 
-To install this library, you have two options.
+Or clone it and install locally:
 
- ### Option 1: Use [Poetry](https://python-poetry.org/):
+```bash
+git clone https://github.com/yourusername/agentic-patterns-course.git
+cd agentic-patterns-course
+pip install .
+```
+
+### Development
+
+To install for development using [Poetry](https://python-poetry.org/):
 
 ```
 poetry install
-```
-
-### Option 2: Install the PyPi library
-
-```sh
-pip install -U agentic-patterns
 ```
 
 ---
@@ -405,6 +409,7 @@ To run the Crew, simply run:
 ```python
 crew.run()
 ```
+
 
 ## Recommended Workflow
 
